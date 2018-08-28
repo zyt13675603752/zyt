@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/M-index.css" />
+		<link rel="stylesheet" href="amaze/css/amazeui_homePage.css">
+		<script type="text/javascript" src="js/jquery-1.4.4.js" ></script>
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js" ></script>
+	</head>
+	<body>
+		<div class="top">
+			<div class="logobox"><a href=""><img class="fhui" src="images/tp01.png" /></a></div>
+			<div class="searbox">
+				<input type="text" value="请输入您想搜索的内容" />
+				<img src="images/m013.png" />
+			</div>
+			<div class="more"><img src="images/m02.png" /></div>
+		</div>
+		<div class="fl-box">
+			<p>全部分类</p>
+			<div class="rmtjbox" id="rmtjbox">
+				<div class="qbfl">
+					<div class="felbox" id="felbox">
+						<ul class="fengl">
+							<li class="add011"><span class="litj">热门推荐</span></li>
+							<li><span class="lifs">纺纱原料</span></li>
+							<li><span class="lims">毛纱部分</span></li>
+							<li><span class="lifz">纺织机械</span></li>
+							<li><span class="lihg">化工助剂</span></li>
+							<li><span class="lifl">毛衫辅料</span></li>
+						</ul>
+					</div>
+					<div class="xxfl" id="xxfl">
+						<ul>
+							<li><a href="">澳洲羊绒</a></li>
+							<li><a href="">东北毛条</a></li>
+							<li><a href="">羊毛</a></li>
+							<li><a href="">真丝</a></li>
+							<li><a href="">化纤</a></li>
+							<li><a href="">兔毛绒</a></li>
+							<li><a href="">法国毛条</a></li>
+							<li><a href="">乌拉圭化纤</a></li>
+							<li><a href="">毛料</a></li>
+							<li><a href="">纺织机</a></li>		
+							<li><a href="">毛料</a></li>
+							<li><a href="">纺织机</a></li>	
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="dlzc bgcolors matop">
+					<ul>
+						<li><a href="">登录</a>丨</li>
+						<li><a href="">注册</a></li>
+					</ul>
+					<div>
+						<img src="images/m015.png" />
+					</div>
+			</div>
+			<div class="btom">
+					<div>
+						<a href="">首页 </a>丨 
+						<a href="">购物清单</a>丨  
+						<a href="">收藏夹</a>
+					</div>
+					<div>
+						<a href="">手机版 </a>丨 
+						<a href="">电脑版</a> 
+					</div>
+					<p>美衫联版权所有 2016-2099</p>
+			</div>	
+		</div>
+		<div class="fotter">
+			<ul>
+				<li>
+					<a href="">
+						<img src="images/bt01.png" />						
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="images/bt02.png" />						
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="images/bt03.png" />					
+					</a>
+				</li><li>
+					<a href="">
+						<img src="images/bt04.png" />						
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img class="img01" src="images/bt05.png" />						
+					</a>
+				</li>
+			</ul>
+		</div>
+		
+	</body>	
+	<script type="text/javascript">
+	/*获取屏幕高度*/
+		/*total = document.documentElement.clientHeight;
+		colHeight = total-50-document.getElementById("rmtjbox").offsetTop;
+		document.getElementById("rmtjbox").style.height=colHeight+"px";	
+		document.getElementById("xxfl").style.height=(colHeight-44)+"px";*/
+		var rh=$(".rmtjbox").height();
+		$(".xxfl").css("height",rh+"px");
+		$(".felbox").css("height",rh+"px");
+		$(window).resize(function(){
+			var rh=$(".rmtjbox").height();
+			$(".xxfl").css("height",rh+"px");
+			$(".felbox").css("height",rh+"px");
+		});
+	/*左侧导航效果*/	
+		$(".fengl li").click(function(){
+			$(this).addClass("add011").siblings().removeClass("add011")
+		});
+			
+	</script>
+</html>
